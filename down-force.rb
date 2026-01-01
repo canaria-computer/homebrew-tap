@@ -5,21 +5,21 @@
 class DownForce < Formula
   desc "Evidence collection CLI application for phishing and illegal copyright infringement websites"
   homepage "https://github.com/canaria-computer/down-force"
-  version "0.20.0-dev1.4"
+  version "0.20.0-dev1.6"
   license "LicenseRef-PolyForm-Strict-1.0.0 OR LicenseRef-PolyForm-Internal-Use-1.0.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/canaria-computer/down-force/releases/download/v0.20.0-dev1.4/down-force_0.20.0-dev1.4_darwin_amd64.tar.gz"
-      sha256 "6a6fe64ddff67a17375cdee51d609e21e758a5e3284101dea35112fa28f003ed"
+      url "https://github.com/canaria-computer/down-force/releases/download/v0.20.0-dev1.6/down-force_0.20.0-dev1.6_darwin_amd64.tar.gz"
+      sha256 "c62223ccd9355c50be397dbcf2ecbbb40181c684c9e0e3cf33bd741bfb789587"
 
       def install
         bin.install "down-force"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/canaria-computer/down-force/releases/download/v0.20.0-dev1.4/down-force_0.20.0-dev1.4_darwin_arm64.tar.gz"
-      sha256 "e101aec2298741d9867631ec71b5805be6a1214c4d3fd22a73068b02162bd90f"
+      url "https://github.com/canaria-computer/down-force/releases/download/v0.20.0-dev1.6/down-force_0.20.0-dev1.6_darwin_arm64.tar.gz"
+      sha256 "cd463b634ad69b216c73b94812ea8e078f2b5d749c8b9f0a36e8ff1329c106ba"
 
       def install
         bin.install "down-force"
@@ -29,15 +29,15 @@ class DownForce < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/canaria-computer/down-force/releases/download/v0.20.0-dev1.4/down-force_0.20.0-dev1.4_linux_amd64.tar.gz"
-      sha256 "f5490daadcdbeb6df903581694bc8edaf21cf9168c898b6284a87bf3c952c723"
+      url "https://github.com/canaria-computer/down-force/releases/download/v0.20.0-dev1.6/down-force_0.20.0-dev1.6_linux_amd64.tar.gz"
+      sha256 "76306d635aa338198a91aac8ca0e8a4402d0c72db217d835c412856037bd2313"
       def install
         bin.install "down-force"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/canaria-computer/down-force/releases/download/v0.20.0-dev1.4/down-force_0.20.0-dev1.4_linux_arm64.tar.gz"
-      sha256 "de7d98365afb5b0e5c6164def4dbf823b1852985279f0415fd501a9b53698a5b"
+      url "https://github.com/canaria-computer/down-force/releases/download/v0.20.0-dev1.6/down-force_0.20.0-dev1.6_linux_arm64.tar.gz"
+      sha256 "40d547e800a518f68714a8905fc27fc76e33604f54d57bb204133b177552a13c"
       def install
         bin.install "down-force"
       end
